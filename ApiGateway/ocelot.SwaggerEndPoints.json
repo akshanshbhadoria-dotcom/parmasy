@@ -1,0 +1,34 @@
+{
+  "SwaggerEndPoints": [
+    {
+      "Key": "User Service",
+      "Config": [
+        {
+          "Name": "User Service",
+          "Version": "v1",
+          "Url": "http://localhost:5083/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "Order Service",
+      "Config": [
+        {
+          "Name": "Order Service",
+          "Version": "v1",
+          "Url": "http://localhost:5291/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "Inventory Service",
+      "Config": [
+        {
+          "Name": "Inventory Service",
+          "Version": "v1",
+          "Url": "http://localhost:5247/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}
