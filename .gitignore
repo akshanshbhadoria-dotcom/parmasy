@@ -17,6 +17,10 @@ coverage/
 .env
 .env.*
 !.env.example
+.vscode/
+**/.vscode/
+node_modules/
+**/node_modules/
 
 # OS files
 .DS_Store

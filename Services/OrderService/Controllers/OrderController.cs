@@ -50,6 +50,11 @@ public class OrderController : ControllerBase
     [HttpGet("history")]
     public async Task<IActionResult> GetOrderHistory()
     {
+        if (User.IsInRole("Admin"))
+        {
+            return Ok(await _orderService.GetAllOrdersAsync());
+        }
+
         if (!TryGetAuthenticatedUserId(out var userId))
         {
             return Unauthorized(new { message = "The token does not contain a valid user ID." });
